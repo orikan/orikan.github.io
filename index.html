@@ -1,1 +1,12 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-quiv="content-type" content="text/html; charset=utf-8" />
+	<title>学习git使用</title>
+</head>
+<body>
+	<h2>我终于懂怎么用git从本地提交文件到repository上了</h2>
+	<p>之前一直搞错了，因为不懂这个git的提交原理 </p>
+	<p>首先git push 作用的范围应该是 git add 过的文件，当自己在本地新建一个文件，或另原本被 git add 作用过的文件发生改变时，此时需要git add, 原因在于 git 在本地有一个缓存区 如果没有git add ，那缓存区的文件不会发生改变，此时使用git commit 向远程主机提交的是之前git add的文件, 也就是存在于缓存区的文件。</p>
+</body>
+</html>
