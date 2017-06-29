@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<!--
-<html>
-<head>
-	<meta http-quiv="content-type" content="text/html; charset=utf-8" />
-	<title>学习git使用</title>
-</head>
-<body>
-	<h2>我终于懂怎么用git从本地提交文件到repository上了</h2>
-	<p>之前一直搞错了，因为不懂这个git的提交原理 </p>
-	<p>首先git push 作用的范围应该是 git add 过的文件，当自己在本地新建一个文件，此时需要git add, git add 后的文件 使用git commit 才会使本地缓存区文件发生改变  之后git push 才会提交正确的文件</p>
-</body>
-</html>
--->
+---
+layout: default
+title: 我的blog
+---
+
+<h2>{{ page.title }}</h2>
+
+<p>最新文章</p>
+
+<ul>
+	{% for post in site.posts %}
+	  <li>{{ post.date | date_to_string }}<a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+</ul>
