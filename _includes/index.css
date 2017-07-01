@@ -1,0 +1,33 @@
+header {
+  margin: auto;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin:0 10px;
+  float: left;
+}
+.header {
+  width: 80%;
+  margin: auto;
+}
+.headline {
+  float: left;
+}
+.navigator {
+  float: left;
+  margin: 10px 0 0 20%;
+}
+.nav-post-menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+}
+/* post emenu */
+#post-list:hover ul {
+  display: block;
+}

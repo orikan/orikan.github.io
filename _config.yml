@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: Your awesome site
 email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -41,3 +41,20 @@ gems:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# costum paragram
+source:         .
+layouts_dir:    ./_layouts
+destination:    ./_site
+
+# main text of home
+name: Orikan
+bio: A web front-end enthusiast,looking for a job now
+github: orikan
+twitter: orikan_zhy
+
+url: http://localhost:4000
+
+exclude: [README.md,Gemfile, Gemfile.lock, _site, vonder]
+safe:           false

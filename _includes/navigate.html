@@ -1,0 +1,15 @@
+<nav class="navigator">
+		<ul>
+			<li><a href="./">HOME</a></li>
+			<li id="post-list"><a href="#">MyPosts</a>
+				<ul class="nav-post-menu">
+					{% for post in site.posts %}
+					<li>{{ post.date | date_to_string }}<a href="{{ post.url }}">{{ post.title}}</a></li>
+					{% endfor %}
+				</ul>
+				</li>
+			<li><a href="#">MyProfile</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+</nav>
+
