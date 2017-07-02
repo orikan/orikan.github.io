@@ -54,7 +54,7 @@ bio: A web front-end enthusiast,looking for a job now
 github: orikan
 twitter: orikan_zhy
 
-url: http://localhost:4000
+url: https://orikan.github.io
 
 exclude: [README.md,Gemfile, Gemfile.lock, _site, vonder]
 safe:           false
