@@ -27,7 +27,10 @@ nav ul li {
   display: none;
   position: absolute;
 }
-/* post emenu */
+.nav-post-menu li {
+  clear: both;
+}
+/* post menu */
 #post-list:hover ul {
   display: block;
 }
