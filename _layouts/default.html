@@ -11,10 +11,13 @@ layout: compress
   <meta name=description content="{{ site.bio }}">
   <meta name=author content="{{site.name}}">
 
+
+  {% include inputcss.html %}
   <link rel="canonical" href="{{ site.url }}{{page.url | replace:'index.html',''}}">
-  <link rel="stylesheet" href="{{ site.url}}/assets/main.css">
+  {% include inputjs.html %}
 </head>
 <body>
 	{{ content }}
+
 </body>
 </html>
