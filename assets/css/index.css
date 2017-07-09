@@ -1,0 +1,37 @@
+.main-banner {
+  margin-top: 3em;
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+}
+.list-social li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+.list-social a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: all .2s linear;
+}
+.list-social a:hover {
+  background-position: 0 bottom;
+}
+a.icon-1 {
+ background-image: url(../img/icon-twitter.png);
+}
+a.icon-2 {
+  background-image: url(../img/icon-github.png);
+}
+a.icon-3 {
+  background-image: url(../img/icon-gplus.png);
+}
+a.icon-4 {
+  background-image: url(../img/icon-.png);
+}
+/* endfooter */
