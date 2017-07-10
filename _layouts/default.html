@@ -10,7 +10,7 @@ layout: compress
 
   <meta name=description content="{{ site.bio }}">
   <meta name=author content="{{site.name}}">
-
+  <title> {{ page.title }}</title>
 
   {% include inputcss.html %}
   <link rel="canonical" href="{{ site.url }}{{page.url | replace:'index.html',''}}">
@@ -19,6 +19,5 @@ layout: compress
 <body>
 	{{ content }}
 
-  {% include page-foot.html %}
 </body>
 </html>
