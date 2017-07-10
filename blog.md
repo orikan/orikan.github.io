@@ -4,7 +4,10 @@ title: blog
 pagename: blog
 ---
 {% include header.html %}
-<div class="contianer">
+<div class="container">
+<div>
+{{ site.posts[0].body }}
+</div>
 <div class="list-menu pull-right">
 <ul class="post-list">
 {% for post in site.posts %}

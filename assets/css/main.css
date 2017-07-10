@@ -119,4 +119,12 @@ pre {
 .bg-content {
   background: url(../img/bg-pic.jpeg);
 }
-
+.content {
+  margin: 40px 80px 0;
+}
+.content h1,.content h2,.content h3 {
+  color: #f25c27;
+}
+.content p {
+  color: #707070;
+}
