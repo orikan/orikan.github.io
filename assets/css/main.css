@@ -120,11 +120,16 @@ pre {
   background: url(../img/bg-pic.jpeg);
 }
 .content {
+  color: #707070;
   margin: 40px 80px 0;
+}
+.content p, .content a{
+  color: #707070;
 }
 .content h1,.content h2,.content h3 {
   color: #f25c27;
 }
-.content p {
-  color: #707070;
+.content-right {
+  padding-left: 10px;
+  border-left: 1px dashed #f25c27;
 }
