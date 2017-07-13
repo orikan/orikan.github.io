@@ -123,8 +123,15 @@ pre {
   color: #707070;
   margin: 40px 80px 0;
 }
-.content p, .content a{
+.content p {
   color: #707070;
+}
+.content a {
+  color: #707070;
+  text-decoration: underline;
+}
+.content a:hover {
+  color: #f25c27;
 }
 .content h1,.content h2,.content h3 {
   color: #f25c27;
