@@ -25,7 +25,6 @@ pagename: blog
 <div class="pagination">
   {% if paginator.page == 2 %}
     <a href="{{ site.url }}/blog">Previous</a>
-  {% else %}
   {% endif %}
   {% if paginator.previous_page and paginator.page != 2 %}
     <a href="{{ site.url }}/blog/page{{ paginator.previous_page }}" class="previous">Previous</br></a>
