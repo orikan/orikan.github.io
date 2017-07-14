@@ -23,8 +23,12 @@ pagename: blog
 
 <!-- 分页链接 -->
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ site.url }}/blog/page{{ paginator.previous_page }}" class="previous">Previous</a>
+  {% if paginator.page == 2 %}
+    <a href="{{ site.url }}/blog">Previous</a>
+  {% else %}
+  {% endif %}
+  {% if paginator.previous_page and paginator.page != 2 %}
+    <a href="{{ site.url }}/blog/page{{ paginator.previous_page }}" class="previous">Previous</br></a>
   {% else %}
     <span class="previous">Previous</span>
   {% endif %}
