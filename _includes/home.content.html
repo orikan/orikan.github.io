@@ -1,13 +1,24 @@
 <div class="home-content">
-<h1>Welcome to my blog</h1>
-<p>container test</p> 
-<p>一些高大上的话，</p>
-<h2> How to create a git pages project</h2>
-<p> first you need to create a github repository called YOURNAME.github.io</p>
-<p> then use git</p> 
+<h1>欢迎来到我的博客</h1>
+<h2>关于本博客</h2>
+<p>本博客是本人使用github pages 加 jekyll 技术搭建的个人静态博客,并有在github 上有Repository <a href="https://github.com/orikan/orikan.github.io">详情点这</a></p>
+<h2>关于github pages </h2>
+<a href="https://pages.github.com">Github Pages</a>
+<p>简单来说  GitHub Pages 是可以被认为是用户编写的、托管在 GitHub 上的静态网页的技术。</p>
+<h3>如何开始一个github pages</h3>
+<p>1. 首先在你的github 帐号内 新建一个名为 YOURNAME.github.io的 库（Repository），YOURNAME请自行替换成你自己的名字</p>
+<p>2. 接着回到本地直接使用git clone</p>
+<code> git clone https://github.com/YOURNAME/YOURNAME.github.io</code>
+<p>这时候已经可以直接编写页面了,并且 YOURNAME.github.io 已经可以访问</p>
+<h2>关于jekyll</h2>
+<p>来自官方的简介介绍: 将纯文本转换为静态博客网站<a href="http://jekyllcn.com/" target="_blank">Jekyll官方中文站</a></p>
+<p>关于安装与使用, 推荐是在linux系统上通过gem来安装</p>
 <code>
-git clone YOURNAME.github.io
+~ $ gem install jekyll bundler
+~ $ jekyll new my-awesome-site
+~ $ cd my-awesome-site
+~/my-awesome-site $ bundle install
+~/my-awesome-site $ bundle exec jekyll s
 </code>
-<p>then you can open it on your internet browser YOURNAME.github.io</p>
-<P>but it's a blank page , you can use jekyll to set up you own static blog page </p>
+<p>之后打开浏览器 http://localhost:4000 便可看到jekyll生成的页面 </p>
 </div> 

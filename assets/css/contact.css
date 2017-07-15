@@ -1,0 +1,46 @@
+.contact-container {
+  margin: 0 35%;
+  border: 1px solid black;
+}
+.contact-content li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-content p {
+  color: #5f3c27;
+  text-align: center;
+}
+.contact-content i {
+  position: relative;
+  display: inline-block;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: all .2s;
+}
+.icon-github {
+  background-image: url(../img/icon-github.png);
+  background-position
+}
+.icon-weibo {
+  background-image: url(../img/icon-weibo.png);
+}
+.contact-content a:hover i {
+  background-position: 0 bottom;
+}
+.contact-content a:hover span {
+  left: 0; 
+  opacity: 100;
+  visibility: visible;
+}
+.contact-link {
+  position: relative;
+  left: -120px;
+  color: #5f3c23;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s;
+}
