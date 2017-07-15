@@ -1,11 +1,15 @@
-.my-navbar {
-}
 .middle-nav {
   float: none !important;
   margin: 0 auto;
 }
 .navbar-header h1 {
   margin-bottom: 0;
+}
+.navbar-header h1 a {
+  color: #5f3c23;
+}
+.navbar-header h1 a:hover {
+  color: white;
 }
 .c-navbar {
   padding: 0 !important;

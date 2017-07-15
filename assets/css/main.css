@@ -5,7 +5,9 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font: 'Microsoft YaHei';
+}
 
 /**
  * Basic styling
@@ -120,20 +122,21 @@ pre {
   background: url(../img/bg-pic.jpeg);
 }
 .content {
-  color: #707070;
   margin: 40px 80px 0;
 }
-.content p {
+/* 把带有内容的 类专注于设置文本样式 容器类专注于设置盒子模型*/
+.home-content p, .post-list-right li {
   color: #707070;
 }
-.content a {
+.home-content a, .post-list-right a {
   color: #707070;
   text-decoration: underline;
 }
-.content a:hover {
+.home-content a:hover, .post-list-right a:hover {
   color: #f25c27;
 }
-.content h1,.content h2,.content h3 {
+.home-content h1, .home-content h2, .home-content h3,
+.post-list-right h1, .post-list-right h2, .post-list-right h3{
   color: #f25c27;
 }
 .content-right {

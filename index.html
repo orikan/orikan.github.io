@@ -8,13 +8,19 @@ pageclass: layoutDefault
   <div class="bg-content">
   <div class="container">
   <div class="row">
-  <div class="col-xs-10 content row">
-     <div class="col-xs-9">
-     {% include content-left.html %}
+  <div class="col-xs-10 content">
+  <div class="row">
+     <div class="col-xs-8">
+       <div class="content-left">
+	{% include home.content.html %}
+       </div>
      </div>
-     <div class="col-xs-3">
-     {% include content-right.html %}
+     <div class="col-xs-4">
+      <div class="content-right">
+	{% include post-list.content.html %}
+      </div>
      </div>
+  </div>
   </div>        
 <!-- slider -->
      <!--div class="slider-wrapper flexslider main-banner">

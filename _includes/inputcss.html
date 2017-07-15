@@ -12,5 +12,9 @@
   <link rel="stylesheet" href="{{ site.url }}/assets/css/headerstyle.css"> 
 {% endif %}
 {% if page.pagename == 'blog' %}
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/headerstyle.css">
-{% endif%}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/blog.css">
+{% endif %}
+{% if page.pageclass == 'article' %}
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/post-list.css">
+{% endif %}

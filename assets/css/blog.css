@@ -1,3 +1,6 @@
-.list-menu {
-  border: 1px solid #999;
+.blog-content h1 a, .blog-content h2 {
+  color: #f25c27;
+}
+.blog-content span, .blog-content em, .blog-content i {
+  color: #707070;
 }
