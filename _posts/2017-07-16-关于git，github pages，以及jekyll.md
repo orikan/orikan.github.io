@@ -27,11 +27,16 @@ linux上，我用的是ubuntu系统，安装命令是
 
 2. added,已跟踪，跟踪文件是git 工作的重要的基础，
 使用命令: 
-<code>~ $ git add [filename] </code>
-也可以使用 <code>.</code>代替<code>[filename]</code>， <code>.</code>表示当前目录下所有文件,
+ <code> ~ $ git add [filename]</code>,
+ 也可以使用 <code>.</code>代替<code>[filename]</code>， <code>.</code>表示当前目录下所有文件,
 
-3. 
+3. 已修改，此文件仍然需要用 git add 添加
 
+4. 已提交， 使用 <code>~ $ git commit [filename] -m [commitmessage]</code>
+命令进行提交
+
+5. 已推送， 此文件使用<code>~ $ git status </code>查看会提示与上游分支一样，无需提交
+推送命令<code>~ $ git push [<选项>] [<仓库> [<引用规格>...]]</code>
 
 
 关于 github pages， 使用是没什么复杂的，
