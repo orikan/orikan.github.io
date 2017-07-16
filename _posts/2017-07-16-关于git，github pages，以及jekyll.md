@@ -2,6 +2,7 @@
 layout: post-layout
 pageclass: article
 pagename: post
+myvariable: '{{ site.date }}'
 ---
 
 ## 自己在这段时间使用git、github pages以及jekyll上做点简单小结
@@ -55,7 +56,6 @@ linux上，我用的是ubuntu系统，安装命令是
 
 如果硬是想在windows上装请看这个地方
 
-
 ><h3>Jekyll on Windows</h3>
 >While Windows is not an officially-supported platform,
 it can be used to run Jekyll with the proper tweaks. 
@@ -63,4 +63,34 @@ it can be used to run Jekyll with the proper tweaks.
 
 <a href="https://jekyllrb.com/docs/windows/">你可以在这里找到这句话，以及安装方法</a>
 
+在ubuntu系统上安装好ruby后gem就有了,ruby的安装方法[RubyChina](https://ruby-china.org/wiki/install_ruby_guide)
 
+接下来就是安装kekyll了:
+<code>~ $ gem install jekyll bundler</code>
+
+我安装的版本是 jekyll 3.5.0
+
+如何快速开始一个jekyll项目:
+<pre>
+<code>~ $ jekyll new my-awesome-site</code>
+<code>~ $ cd my-awesome-site</code>
+<code>~/my-awesome-site $ bundle install</code>
+<code>~/my-awesome-site $ bundle exec jekyll s</code>
+# => 打开浏览器 http://localhost:4000
+</pre>
+
+初始的项目算是本地搭建好了，学习jekyll首先得弄懂它的配置文件“ _config.yml”及各项配置,
+关于配置也是有文档说明请在jekyll的中文站查看[JekyllCn](http://jekyllcn.com/)
+
+我只记一下我的问题，
+
+baseurl 的设置会让你在访问这个jekyll页面时只能使用url/baseurl的形式访问，所以不设置baseurl地址还短一点
+
+还有一些设置参数都可以自定义，
+
+例如日期 date，想要获得配置文件中的date 只需要在页面中使用liquid的模板语言的表达式: 
+{% raw %}
+<code>
+  {{ site.date }}
+</code>
+{% endraw %}
