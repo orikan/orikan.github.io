@@ -23,21 +23,20 @@ linux上，我用的是ubuntu系统，安装命令是
 
 我一开始用到的命令：
 <code>~ $ git status </code>查看当前目录的git 工作状况，
-对于git来说，一个目录下的文件状态一般有x种:
-1. add 前，文件的(未跟踪，未被git跟踪的文件所有git 的命令都不会有效果)
+对于git来说，一个目录下的文件状态一般有4种:
+1. add 前，文件没有被跟踪，未被git跟踪的文件所有git 的命令都不会有效果.
 
-2. added,已跟踪，跟踪文件是git 工作的重要的基础，
+2. 已跟踪,跟踪文件是git 工作的重要的基础，
 使用命令: 
- <code> ~ $ git add [filename]</code>,
+ <code> ~ $ git add [filename]</code>,进行跟踪
  也可以使用 <code>.</code>代替<code>[filename]</code>， <code>.</code>表示当前目录下所有文件,
 
 3. 已修改，此文件仍然需要用 git add 添加
 
-4. 已提交， 使用 <code>~ $ git commit [filename] -m [commitmessage]</code>
-命令进行提交
+4. 已提交， 使用 <code>~ $ git commit [filename] -m [commitmessage]</code>命令进行提交。
 
-5. 已推送， 此文件使用<code>~ $ git status </code>查看会提示与上游分支一样，无需提交
-推送命令<code>~ $ git push [<选项>] [<仓库> [<引用规格>...]]</code>
+5. 已推送文件，表示没有任何更改，一般已提交过的文件需要推送到远程库种。推送命令<code>~ $ git push [<选项>] [<仓库> [<引用规格>...]]</code>
+已推送文件使用<code>~ $ git status </code>查看会提示与上游分支一样，无需提交，git commit 同理，
 
 
 关于 github pages， 使用是没什么复杂的，
