@@ -1,0 +1,14 @@
+@media only screen and ( max-width: 1366px ) {
+  #resume-container {
+	display: none;
+    }
+}
+@media only screen and ( max-width: 480px ){
+  .contact-container {
+	display:none;
+}
+  #resume-container {
+	display: block;
+    }
+}
+

@@ -1,6 +1,6 @@
 .blog-content h1 a, .blog-content h2 {
   color: #f25c27;
 }
-.blog-content span, .blog-content em, .blog-content i {
+.blog-content span, .blog-content em, .blog-content i, .blog-content p {
   color: #707070;
 }
